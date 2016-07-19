@@ -19,6 +19,11 @@ Install external dependencies with:
 npm install
 ```
 
+Run tests with:
+```sh
+npm test
+```
+
 Serve the application with:
 ```sh
 npm start
