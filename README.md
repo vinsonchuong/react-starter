@@ -19,12 +19,15 @@ Install external dependencies with:
 npm install
 ```
 
+Serve the application with:
+```sh
+npm start
+```
+
 Run tests with:
 ```sh
 npm test
 ```
 
-Serve the application with:
-```sh
-npm start
-```
+Note that the integration tests (under `spec/integration`) assume that the
+application is already being served.
