@@ -31,3 +31,14 @@ npm test
 
 Note that the integration tests (under `spec/integration`) assume that the
 application is already being served.
+
+## Deployment
+Compile, minify, and compress assets with:
+```bash
+npm run build
+```
+
+Deploy to Cloud Foundry with:
+```bash
+cf push react-starter-app -p dist
+```

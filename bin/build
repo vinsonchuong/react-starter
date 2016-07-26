@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+set -o errexit
+set -o nounset
+# set -o xtrace
+set -o pipefail
+
+rm -rf dist
+
+rollup -c
+cp index.html dist
+gzip --best --keep dist/*
+
+touch dist/Staticfile
