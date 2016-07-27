@@ -42,3 +42,14 @@ Deploy to Cloud Foundry with:
 ```bash
 cf push react-starter-app -p dist
 ```
+
+Deploy to Heroku with:
+```bash
+cd dist
+git init
+git add -A
+git commit -m 'Deploy'
+heroku git:remote --app react-starter-app || heroku apps:create react-starter-app
+heroku buildpacks:set https://github.com/heroku/heroku-buildpack-static
+git push -f heroku master
+```

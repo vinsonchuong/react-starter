@@ -11,3 +11,4 @@ cp index.html dist
 gzip --best --keep dist/*
 
 touch dist/Staticfile
+echo '{"root": "./"}' > dist/static.json
