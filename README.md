@@ -35,6 +35,17 @@ npm test -- spec/integration/**
 npm test -- spec/unit/**
 ```
 
+Inspect tests in the Chrome debugger with:
+```sh
+npm debug-test
+
+# Only integration tests
+npm debug-test -- spec/integration/**
+
+# Only unit tests
+npm debug-test -- spec/unit/**
+```
+
 Note that the integration tests (under `spec/integration`) assume that the
 application is already being served.
 

@@ -4,6 +4,7 @@
   "scripts": {
     "start": "webpack-dev-server",
     "test": "jasmine",
+    "debug-test": "node-nightly --inspect --debug-brk node_modules/.bin/jasmine",
     "build": "bin/build"
   },
   "dependencies": {
@@ -20,6 +21,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "enzyme": "^2.4.1",
     "jasmine-es6": "^0.2.1",
+    "node-nightly": "^1.4.2",
     "phantomjs-adapter": "0.0.2",
     "react-addons-test-utils": "^15.2.1",
     "rollup": "^0.34.1",
