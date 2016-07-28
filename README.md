@@ -27,6 +27,12 @@ npm start
 Run tests with:
 ```sh
 npm test
+
+# Only integration tests
+npm test -- spec/integration/**
+
+# Only unit tests
+npm test -- spec/unit/**
 ```
 
 Note that the integration tests (under `spec/integration`) assume that the
