@@ -6,7 +6,6 @@ set -o pipefail
 
 rm -rf dist
 
-rollup -c
 html-minifier -c node_modules/html-minifier/sample-cli-config-file.conf index.html -o dist/index.html
 gzip --best --keep dist/*
 
