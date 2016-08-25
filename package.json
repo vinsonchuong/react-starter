@@ -20,6 +20,7 @@
     "babel-preset-stage-0": "^6.5.0",
     "build-bin": "^0.0.6",
     "build-esnext": "^0.0.2",
+    "build-gzip": "0.0.2",
     "build-html": "^0.0.1",
     "enzyme": "^2.4.1",
     "jasmine-es6": "^0.2.1",

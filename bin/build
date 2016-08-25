@@ -6,7 +6,5 @@ set -o pipefail
 
 rm -rf dist
 
-gzip --best --keep dist/*
-
 touch dist/Staticfile
 echo '{"root": "./"}' > dist/static.json
